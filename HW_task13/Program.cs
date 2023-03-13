@@ -3,6 +3,7 @@
 Console.WriteLine("Pls, input integer number:");
 
 int num = Convert.ToInt32(Console.ReadLine());
+num = Math.Abs(num);
 
 int num3 = 1;
 

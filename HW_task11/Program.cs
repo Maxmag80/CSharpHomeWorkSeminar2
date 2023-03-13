@@ -4,13 +4,14 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 int origNum = num;
 int count = 1;
+//int num1 = Math.Abs(num);
 
-if (num / 10 >= 1)
+if (Math.Abs(num) / 10 >= 1)
 {
-    while (num / 10 >= 1)
+    while (Math.Abs(num) / 10 >= 1)
     {
-        num = num / 10;
         count = count * 10;
+        num = num /10;
     }
     int result = num * (count / 10) + origNum % (count / 10);
 

@@ -2,6 +2,7 @@
 
 Console.WriteLine("Pls, input 3-digital number:");
 int num = Convert.ToInt32(Console.ReadLine());
+num = Math.Abs(num);
 
 if (num / 100 >= 1 && num / 100 < 10)
 {
@@ -9,6 +10,4 @@ if (num / 100 >= 1 && num / 100 < 10)
     Console.WriteLine($"Second number is: {secondNum}");
 }
 else
-{
     Console.WriteLine("You entered non 3-digital number.");
-}
